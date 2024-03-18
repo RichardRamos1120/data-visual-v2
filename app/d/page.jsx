@@ -44,7 +44,7 @@ export default async function a() {
   const data = await getData();
 
   // get the current questions
-  const q3 = data.map((q)=> q.Q37 )
+  const q3 = data.map((q)=> q.Q7 )
 
   questions = [...new Set(q3)]
 
