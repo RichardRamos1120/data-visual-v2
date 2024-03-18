@@ -1,6 +1,6 @@
-import Topdata from "@/app/components/Topdata";
-import fetchCsv from "@/app/components/FetchCsv";
-import BarChart from "@/app/components/BarChart";
+import Topdata from "../../components/Topdata";
+import fetchCsv from "../../components/FetchCsv";
+import BarChart from "../../components/BarChart";
 import Link from "next/link";
 
 
