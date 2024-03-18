@@ -7,7 +7,7 @@ import BarChart from "./components/BarChart";
 const chartData = {
   label: "Q3 How concerned are you about the risk of wildfires to your household?",
   labels: ['One', 'Two', 'Three', 'Four', 'Five'],
-  values: [65, 59, 80, 81,100],
+  values: [50, 53, 113, 102,182],
   type:"bar",
   backgroundColor: ['rgba(99,148,255,0.5)', 'rgba(54, 162, 235, 0.5)', 'rgba(255, 206, 86, 0.5)', 'rgba(75, 192, 192, 0.5)', 'rgba(153, 102, 255, 0.5)']
 };
