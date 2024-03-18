@@ -7,7 +7,7 @@ export default function Topnav() {
   return (
     <>
       <nav className="topnav">
-        <Link href="/" className="topnav__heading">Visualization</Link>
+        <Link href="/" className="topnav__heading">Data Visualization</Link>
         <div className="topnav__container">
   
  
