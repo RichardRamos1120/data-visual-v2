@@ -68,7 +68,7 @@ export default async function a() {
 
       <h3 className="font-semibold tracking-wide">Questions List</h3>
       <div className="question-list-container mt-5">
-      {questionsChoice.map( (q,index)=> <Link className={index === 0 ? "btn btn--active" : "btn"} onClick={currentQuestionChoiceUpdater(index)} href={currentQuestionChoice} >{q}</Link> ) }
+      {questionsChoice.map( (q,index)=> <Link key={index} className={index === 0 ? "btn btn--active" : "btn"} onClick={currentQuestionChoiceUpdater(index)} href={currentQuestionChoice} >{q}</Link> ) }
       </div>
       {/* <BarChart data={dataRace} />
       <BarChart data={dataLanguage} /> */}
