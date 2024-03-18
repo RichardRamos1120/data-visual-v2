@@ -1,5 +1,5 @@
 import Topdata from "@/app/components/Topdata";
-import fetchCsv from "@/app/components/fetchCsv";
+import FetchCsv from "@/app/components/FetchCsv";
 import BarChart from "@/app/components/BarChart";
 import Link from "next/link";
 
