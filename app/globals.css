@@ -1,0 +1,249 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* reset */
+
+body{
+  background-color: #E8F1F2;
+}
+
+/* topnav */
+.topnav{
+
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	border-bottom: 1px solid #00000056;
+	background-color: #001A23;
+	padding: 20px 60px 15px 60px;
+
+	.topnav__heading{
+		color: #E8F1F2;
+		font-size: 28px;
+	}
+
+	.topnav__container{
+		display: flex;
+		gap: 20px;
+		.topnav__container__item{
+			font-size: 18px;
+			color:#E8F1F2;
+			border-radius: 12px;
+		}
+		.topnav__container__item--active{
+			color: aliceblue;
+			font-weight: 600;
+		}
+
+	}
+}
+
+.main{
+	margin: 0 auto;
+	
+	max-width: 1920px;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-content: flex-start;
+	gap: 20px;
+	padding: 30px 60px 30px 60px;
+
+	& >*{
+		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		flex: 1;
+	}
+}
+
+.card-container{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+
+	.card-container__main{
+		border: 1px solid rgba(0, 26, 35, 0.123);
+		background-color: rgba(255, 255, 255, 0.486);
+
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding: 10px 20px;
+		border-radius: 12px;
+		
+		.card-container__main__h2{
+			font-size: 28px;
+			font-weight: 600;
+			color: #001a237e;
+		}
+		.card-container__main__h2{
+			color: #001a23c9;
+		}
+	}
+}
+
+/* charts */
+
+.barchartDefault{
+	border: 1px solid red;
+	width:800px;
+	height: 470px;
+	border-radius: 12px;
+	border: 1px solid rgba(0, 26, 35, 0.123);
+    background-color: rgba(255, 255, 255, 0.486);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	padding: 20px;
+
+	& canvas{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+.barchart{
+	border: 1px solid red;
+	width:750px;
+	height: 450px;
+	padding: 20px;
+	border-radius: 12px;
+	border: 1px solid rgba(0, 26, 35, 0.123);
+    background-color: rgba(255, 255, 255, 0.486);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+	& canvas{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+.pieChart{
+
+	border: 1px solid red;
+	width:850px;
+	height: 800px;
+	padding: 20px;
+	border-radius: 12px;
+	border: 1px solid rgba(0, 26, 35, 0.123);
+    background-color: rgba(255, 255, 255, 0.486);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+	& canvas{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/* charts */
+.polarAreaChart{
+	border: 1px solid red;
+	width:650px;
+	height: 450px;
+	padding: 20px;
+	border-radius: 12px;
+	border: 1px solid rgba(0, 26, 35, 0.123);
+    background-color: rgba(255, 255, 255, 0.486);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+	& canvas{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.question-list-container{
+	padding: 20px;
+	border: 1px solid rgba(0, 26, 35, 0.123);
+    background-color: rgba(255, 255, 255, 0.486);
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: fit-content;
+
+	.btn{
+		border-radius: 8px;
+		border: 1px solid rgba(0, 26, 35, 0.123);
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+		padding: 10px 20px;
+		color: #0c0c0c;
+		font-weight: 600;
+
+		&:hover{
+			background-color:rgba(75, 192, 192, 0.5);
+			color: #001A23;
+		}
+	}
+
+	.btn--active{
+			background-color:rgba(75, 192, 192, 0.5);
+			color: #001A23;
+		}
+}
+
+.question-list-container{
+
+	max-height: 600px;
+	overflow-y: auto;
+}
