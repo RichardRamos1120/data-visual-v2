@@ -69,26 +69,50 @@ export default async function a() {
   
 
 
+  const currentDate = new Date().toLocaleDateString();
+  const dataLanguage = {
+    label: "Laguages",
+    labels: ["English", "Spanish"],
+    values: [152.5,348.5],
+    type:"polarArea",
+    backgroundColor: ['rgba(99,148,255,0.5)', 'rgba(54, 162, 235, 0.5)']
+  }
+
 
 
 
   return (
-    <main className="main">
-      <div className="main__left">
-      <p className="mb-5 font-semibold tracking-wide">Data overview: wildfire, outreach, detection, vegetation, grants, partnerships, home hardening.</p>
+    <main className="main main main-test">
+      
+     
+     <div className="main__left">
+
+<div className="main__left__question-top"><img src="/material-symbols_list.svg" alt="icon" />Question List</div>
+<div className="question-list-container mt-5">
+{questionsChoice.map( (q,index)=> <Link key={index} className={index === 0 ? "btn-question-item btn btn--active" : "btn btn-question-item"} onClick={currentQuestionChoiceUpdater(index)} href={currentQuestionChoice} >{q}</Link> ) }
+</div>
+
+
+
+    </div>
+
+      <div className="main__right">
+      <div class="data-overview"><h2>Data Overview</h2> <p>{currentDate}</p></div>
+     
       <Topdata/>
 
-      <div className="barchart mt-5 ">
-        <BarChart data={chartData} className="w-96 " />
+
+      <div className="main__right_charts">
+          <div className="main__right_charts__item main__right_charts__item--primary">
+            <BarChart data={chartData} className="w-96 " />
+          </div>
+
+          <div className="main__right_charts__item main__right_charts__item--language">
+          <BarChart data={dataLanguage} />
+          </div>
       </div>
 
-      </div>
-      <div className="main__right">
 
-      <h3 className="font-semibold tracking-wide">Questions List</h3>
-      <div className="question-list-container mt-5">
-      {questionsChoice.map( (q,index)=> <Link key={index}  className={index === 0 ? "btn btn--active" : "btn"} onClick={currentQuestionChoiceUpdater(index)} href={currentQuestionChoice} >{q}</Link> ) }
-      </div>
 
       </div>
     </main>

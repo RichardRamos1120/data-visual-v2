@@ -12,18 +12,18 @@ export default function Topnav() {
   
  
         <Link href={"/a"} 
-        className={pathname === "/a" ? "topnav__container__item topnav__container__item--active" : "topnav__container__item"}>
+        className={pathname.startsWith('/a') ? "topnav__container__item topnav__container__item--active" : "topnav__container__item"}>
           Wildfire Concerns</Link>
         <Link href={"/b"} 
-        className={pathname === "/b" ? "topnav__container__item topnav__container__item--active" : "topnav__container__item"}>Outreach & Education</Link>
+        className={pathname.startsWith('/b') ? "topnav__container__item topnav__container__item--active" : "topnav__container__item"}>Outreach & Education</Link>
         <Link href={"/c"} 
-        className={pathname === "/c" ? "topnav__container__item topnav__container__item--active" : "topnav__container__item"}>Detection & Evacuation</Link>
+        className={pathname.startsWith('/c') ? "topnav__container__item topnav__container__item--active" : "topnav__container__item"}>Detection & Evacuation</Link>
         <Link href={"/d"} 
-        className={pathname === "/d" ? "topnav__container__item topnav__container__item--active" : "topnav__container__item"}>Veg Management</Link>
+        className={pathname.startsWith('/d') ? "topnav__container__item topnav__container__item--active" : "topnav__container__item"}>Veg Management</Link>
         <Link href={"/e"} 
-        className={pathname === "/e" ? "topnav__container__item topnav__container__item--active" : "topnav__container__item"}>Grants & Partnerships</Link>
+        className={pathname.startsWith('/e') ? "topnav__container__item topnav__container__item--active" : "topnav__container__item"}>Grants & Partnerships</Link>
         <Link href={"/f"} 
-        className={pathname === "/f" ? "topnav__container__item topnav__container__item--active" : "topnav__container__item"}>Home Hardening & DSpace</Link>
+        className={pathname.startsWith('/f') ? "topnav__container__item topnav__container__item--active" : "topnav__container__item"}>Home Hardening & DSpace</Link>
         </div>
       </nav>
     </>
