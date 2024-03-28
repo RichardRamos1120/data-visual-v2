@@ -90,7 +90,7 @@ export default async function a() {
 
 <div className="main__left__question-top"><img src="/material-symbols_list.svg" alt="icon" />Question List</div>
 <div className="question-list-container mt-5">
-{questionsChoice.map( (q,index)=> <Link key={index} className={index === 0 ? "btn-question-item btn btn--active" : "btn btn-question-item"} onClick={currentQuestionChoiceUpdater(index)} href={currentQuestionChoice} >{q}</Link> ) }
+{questionsChoice.map( (q,index)=> <Link key={index} className={index === 1 ? "btn-question-item btn btn--active" : "btn btn-question-item"} onClick={currentQuestionChoiceUpdater(index)} href={currentQuestionChoice} >{q}</Link> ) }
 </div>
 
 
